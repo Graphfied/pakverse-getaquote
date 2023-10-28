@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get A Quote</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="https://cdn.discordapp.com/attachments/1151576407542083725/1162505353179701358/Untitled_design.mp4?ex=654ea37a&is=653c2e7a&hm=921b5858383135aed4c1deea1b6e9f0590db0902038cbe7c82c4e7eb3660d4a9&" type="video/mp4">
+    </video>
+    <div class="container">
+        <h1>Get A Quote</h1>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="tel" name="phone" placeholder="Phone Number" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="description" placeholder="Description" required></textarea>
+            <input type="hidden" name="_next" value="https://yourwebsite.com/thanks.html">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
